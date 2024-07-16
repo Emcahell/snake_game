@@ -77,6 +77,8 @@ body{
 
 #scoreBoard {
     display: inline-flex;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
 }
 
 .square {
