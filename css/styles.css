@@ -1,0 +1,101 @@
+* {
+    font-family: 'Press Start 2P', monospace;
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(40, 40, 41);
+}
+
+
+.container{
+    position: relative;
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#board, .boardInfo {
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#gameOver {
+    position: absolute;
+    left: 25%;
+    font-size: 70px;
+    color: white;
+    background: rgba(0, 0, 0, 0.452);
+    padding: 40px 100px;
+    display: none;
+}
+
+.boardInfo {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#btn-start {
+    position: absolute;
+    bottom: 30px;
+    padding: 15px 50px;
+    line-height: 15px;
+    background-color: rgba(255, 255, 255, 0.192);
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+#btn-start:hover{
+    border: 2px solid rgba(0, 0, 0, 0.432);
+    background-color: transparent;  
+
+}
+
+.box-score{
+    position: absolute;
+    top: 70px;
+    display: flex;
+    width: 100px;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 20px;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    /* aspect-ratio: 1; */
+    width: 50px;
+    height: 50px;
+}
+
+.emptySquare {
+    background-color: rgb(60, 94, 57);
+    padding: 2px;
+}
+
+.snakeSquare {
+    background-color: rgb(228, 228, 228);
+    border: 1px solid #000;
+}
+
+.foodSquare {
+    background-color: rgb(228, 228, 2);
+    /* border: 1px solid #000; */
+}
